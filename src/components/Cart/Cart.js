@@ -23,6 +23,7 @@ const Cart = (props) => {
         item => {
             return (<CartItem key={item.id}
                               id={item.id}
+                              name={item.name}
                               price={item.price}
                               amount={item.amount}
                               onAdd={cartItemAddHandler.bind(null, item)}
